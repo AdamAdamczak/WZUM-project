@@ -9,3 +9,5 @@ Przy wykorzystaniu wspomnianego narzędzia oraz współpracy wszystkich student�
 Rozwiązanie problemu wykorzystało model **LogisticRegression**, który wykazał się wysoką dokładnością w testach. W ramach preprocessingu usunięte zostały kolumny o nazwie ***'multi_hand_world_landmarks'***, które nie wniosły znaczących informacji w porównaniu do danych pochodzących z ***'multi_hand_landmarks'***. Zastosowano **LabelEncoding** w celu zamiany kolumny ***'handedness.label'*** oraz ***'letter'*** na wartości liczbowe.
 
 Do redukcji liczby cech użyto **SelectKBest**, który wybrał tylko te cechy, które niosą ze sobą najwięcej informacji (48). Dodatkowo, wartości zostały przeskalowane za pomocą **StandardScaler**.
+
+Dla zbioru walidacyjnego osiagnięto ***accuracy_score*** na poziomie **88.79** %
