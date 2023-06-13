@@ -19,7 +19,7 @@ encoder_X_path = 'model/encoder_X.joblib'
 encoder_Y_path = 'model/encoder_Y.joblib'
 selectBeast_path = 'model/select_beast.joblib'
 
-X, y = load_data('data/test2.csv')
+X, y = load_data('data/wzum060623.csv')
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8, test_size=0.20, random_state=42, stratify=y)
 
 le1 = LabelEncoder()
